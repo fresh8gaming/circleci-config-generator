@@ -2,19 +2,22 @@ openapi: 3.0.1
 info:
   title: circlegen
   description: circlegen
-  x-cortex-git:
-    gitlab:
-      repository: ads/adsstaff/circlegen
   x-cortex-tag: adsstaff_circlegen
   x-cortex-type: service
   x-cortex-groups:
   - script
-  x-cortex-owners:
-  - type: group
-    name: ads-se
-    provider: CORTEX
   x-cortex-domain-parents:
   - tag: adsstaff
+  x-cortex-git:
+    gitlab:
+      repository: ads/adsstaff/circlegen
+  x-cortex-owners:
+  - type: group
+    name: team-adsstaff
+    provider: CORTEX
+  x-cortex-issues:
+    jira:
+      defaultJql: ""
   x-cortex-static-analysis:
     sonarqube:
       project: adsstaff_circlegen
